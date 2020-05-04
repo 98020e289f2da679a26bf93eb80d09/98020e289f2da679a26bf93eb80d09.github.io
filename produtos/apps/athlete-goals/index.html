@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.10">
+<title>Athlete Goals: Gerenciador de Metas</title>
+<link rel="stylesheet" href="./../../../css/asciidoctor.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id="athlete-goals" class="article">
+<div id="header">
+<h1>Athlete Goals: Gerenciador de Metas</h1>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="o-que"><a class="anchor" href="#o-que"></a><a class="link" href="#o-que">O que é?</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>É um app que possibilita um <a href="../../../publico-alvo/#atletas">atleta</a> gerenciar, publicar e receber notificações relativas
+a suas metas de curto, médio e longo prazos (<a href="#por-que-ate-4-anos">até 4 anos</a>).
+A cada notificação o atleta também pode receber anúncios de produtos ou serviços
+de <a href="../../../publico-alvo/#anunciantes">anunciantes</a> que o auxiliem a antingir suas metas.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="para-quem"><a class="anchor" href="#para-quem"></a><a class="link" href="#para-quem">Para quem é?</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Para atletas, amadores ou profissionais, que:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Estão começando a praticar esportes ou já o fazem a anos.</p>
+</li>
+<li>
+<p>Possuem ou não um treinador, uma assessoria esportiva.</p>
+</li>
+<li>
+<p>Querem (e precisam) ser mais planejados e diciplinados.</p>
+</li>
+<li>
+<p>Gostam de tecnologia, de apps e das possibilidades que elas oferecem aos esportes.</p>
+</li>
+<li>
+<p>Querem usar seus Smartphones para ampliar suas capacidades de planejamento e execução.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="funcionalidades"><a class="anchor" href="#funcionalidades"></a><a class="link" href="#funcionalidades">Funcionalidades</a></h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Cadastramento, gerenciamento e publicação de metas.</p>
+</li>
+<li>
+<p>Envio de notificações diárias ao atleta, para lembrá-lo de suas metas.</p>
+</li>
+<li>
+<p>Envio de notificações sobre adições e/ou atualizações de metas, para os assinantes do <em>smart contract</em>.</p>
+</li>
+<li>
+<p>Configuração do número de notificações por meta.</p>
+</li>
+<li>
+<p>Busca e apresentação (durante uma notificação) de uma frase motivacional associada a uma meta.</p>
+</li>
+<li>
+<p>Notificação de tempo (anos, meses, semanas e/ou dias) que ainda resta até a finalização da meta.</p>
+</li>
+<li>
+<p>Apresentação de propagandas de anunciantes com ofertas de produtos e serviços relevantes que podem auxiliar o atleta a atingir suas metas.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="aspectos-nao-funcionais"><a class="anchor" href="#aspectos-nao-funcionais"></a><a class="link" href="#aspectos-nao-funcionais">Aspectos não funcionais</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Tecnicamente esse app é, na verdade, um <a href="../../../dev/tecnologias/blockchain/#dapp">Dapp</a>.
+Ou seja, um aplicativo decentralizado em execução numa <a href="../../../dev/tecnologias/blockchain">Blockchain</a>.
+Leia mais sobre os <a href="../../../dev/tecnologias/blockchain/#beneficios-de-um-dapp">benefícios de um Dapp</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="definicoes"><a class="anchor" href="#definicoes"></a><a class="link" href="#definicoes">Definições</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="o-que-e-uma-meta"><a class="anchor" href="#o-que-e-uma-meta"></a><a class="link" href="#o-que-e-uma-meta">O que é uma meta?</a></h3>
+<div class="paragraph">
+<p>Uma meta é uma definição <strong>SMART</strong> para algo que um atleta deseja alcançar.
+Logo, essa definição precisa ser:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>S</strong>pecific (Específica, clara, objetivo e sem margem para erros).</p>
+</li>
+<li>
+<p><strong>M</strong>easurable (Mensurável, quantificável, capaz de ser medido).</p>
+</li>
+<li>
+<p><strong>A</strong>ttainable (Alcançável, mas sem deixar de ser desafiadora).</p>
+</li>
+<li>
+<p><strong>R</strong>elevant (Relevante, causando-lhe um impacto positivo).</p>
+</li>
+<li>
+<p><strong>T</strong>imely (Temporal, ou seja, com um prazo determinado).</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="exemplos-de-metas"><a class="anchor" href="#exemplos-de-metas"></a><a class="link" href="#exemplos-de-metas">Exemplos de metas</a></h4>
+<div class="paragraph">
+<p>Metas públicas do atleta <a href="https://paulojeronimo.github.io/" target="_blank" rel="noopener">Paulo Jerônimo</a>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a id="meta-a"></a> A) Finalizar a <a href="https://maratonadorio.com.br/maratona-42k/" target="_blank" rel="noopener">Maratona do Rio</a> 2020 em até 3 horas e 30 minutos.</p>
+</li>
+<li>
+<p><a id="meta-b"></a> B) Finalizar 100 flexões de braço consecutivas, em até 5 minutos, na prova de Calistenia do dia 25/Jan/2020.</p>
+</li>
+<li>
+<p><a id="meta-c"></a> C) Executar todo o programa <a href="http://www.xtreme21.com/turbo_02/" target="_blank" rel="noopener">Xtreme Turbo</a>, em 21 dias consecutivos, até o dia 22/Jan/2020.</p>
+</li>
+<li>
+<p><a id="meta-d"></a> D) Perder peso, reduzindo de 79.9 kg (em 02/Jan) para 72.9 kg (até 22/Jan/2020).</p>
+</li>
+<li>
+<p><a id="meta-e"></a> E) Durante o primeiro trimestre de 2020, em dias úteis, fazer jejum de 18h.</p>
+</li>
+<li>
+<p><a id="meta-f"></a> F) Durante o primeiro trimestre de 2020, em finais de semana e feriados, fazer jejum de 12h.</p>
+</li>
+<li>
+<p><a id="meta-g"></a> G) Durante todo o ano de 2020, diariamente, beber ao menos 2,5 litros de água.</p>
+</li>
+<li>
+<p><a id="meta-h"></a> H) Durante todo o ano de 2020, diariamente, realizar alongamentos por até 15 minutos.</p>
+</li>
+<li>
+<p><a id="meta-i"></a> I) Durante o primeiro trimestre de 2020, treinar o meu dog (Zeus) por pelo menos 3 vezes na semana.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="por-que-ate-4-anos"><a class="anchor" href="#por-que-ate-4-anos"></a><a class="link" href="#por-que-ate-4-anos">Por que metas até 4 anos?</a></h3>
+<div class="paragraph">
+<p>Sendo possível a definição de metas para até 4 anos,
+atletas profissionais podem utilizar esse app para se planejar até mesmo
+para uma <a href="https://pt.wikipedia.org/wiki/Olimp%C3%ADada" target="_blank" rel="noopener">Olimpíada</a> ou <a href="https://pt.wikipedia.org/wiki/Copa_do_Mundo_FIFA" target="_blank" rel="noopener">Copa do Mundo</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="uma-meta-neste-app"><a class="anchor" href="#uma-meta-neste-app"></a><a class="link" href="#uma-meta-neste-app">Uma meta neste app</a></h3>
+<div class="sect3">
+<h4 id="uma-meta-neste-app-e"><a class="anchor" href="#uma-meta-neste-app-e"></a><a class="link" href="#uma-meta-neste-app-e">É</a></h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Pública (visível a outros atletas) ou privada (visível apenas ao atleta).</p>
+</li>
+<li>
+<p>Disponibilizada na <a href="../../../dev/tecnologias/blockchain">Blockchain</a> pública do <a href="../../../dev/tecnologias/blockchain/#ethereum">Ethereum</a>. Isso significa que ela é:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Pública</strong>:
+Qualquer um com permissões para execução de funções no contrato inteligente (<em>smart contract</em>) do app pode,
+por exemplo, consultar quem deseja "Concluir uma maratona", "Perder peso", etc.</p>
+</li>
+<li>
+<p><strong>Decentralizada</strong>:
+A meta está replicada e replicada em milhares de computadores garantindo, dessa forma, outros atributos:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Inviolabilidade</strong>: não pode ser adulterada ou corrompida, por ninguém.</p>
+</li>
+<li>
+<p><strong>Não repúdio</strong>: depois de registrada por um atleta, ele não pode negar que o fez.
+Leia mais sobre <a href="#nao-repudio">não repúdio</a>.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="uma-meta-neste-app-possui"><a class="anchor" href="#uma-meta-neste-app-possui"></a><a class="link" href="#uma-meta-neste-app-possui">Possui</a></h4>
+<div class="ulist">
+<ul>
+<li>
+<p><a id="meta-descricao"></a> Uma <strong>descrição</strong>, que é o texto completo que define a meta, conforme as palavras do atleta.</p>
+</li>
+<li>
+<p>Uma <strong>data de criação</strong>, gerada automaticamente pelo app quando a meta é criada pelo atleta (e registrada na Blockchain).</p>
+</li>
+<li>
+<p><a id="meta-acao"></a> Uma <strong>ação</strong>: a parte da meta que define "o que" é o objetivo a ser alcançado. Exemplos:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Em <a href="#meta-a">A</a>): Concluir uma maratona.
+Em <a href="#meta-b">B</a>): Praticar Calistenia, visando o ganho de força muscular.
+Em <a href="#meta-c">C</a>): Executar treinos intervalados de alta intensidade (HIIT), visando a queima de gordura.
+Em <a href="#meta-d">D</a>): Perder peso.
+Em <a href="#meta-e">E</a>): Fazer jejum.
+Em <a href="#meta-g">G</a>): Fazer uma <a href="#hidratacao-adequada">hidratação adequada</a> e sistemática.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><a id="meta-medicao"></a> Uma <strong>medição</strong>, que é a parte da meta que define define como ela será medida:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Em <a href="#meta-a">A</a>): até 3 horas e 30 minutos
+Em <a href="#meta-b">B</a>): 100 flexões em até 5 minutos
+Em <a href="#meta-c">C</a>): 21 treinos, em 21 dias, 1 treino por dia
+Em <a href="#meta-d">D</a>): 7 kg a menos, em 21 dias, 2,33 kg por semana
+Em <a href="#meta-e">E</a>): 18 horas de jejum por dia
+Em <a href="#meta-f">F</a>): 12 horas de jejum por dia
+Em <a href="#meta-g">G</a>): 2 litros de água (ou mais) por dia</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><a id="meta-data-finalizacao"></a> Uma <strong>data de finalização</strong>, que é a data até a qual a objetivo (que gera a <a href="#meta-acao">ação</a>) deverá ser alcançado.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Essa data poderá ser obtida a partir de outros sistemas. Por exemplo, em A) (que é uma <strong>prova</strong>),
+a data será trazida, automaticamente, pela integração com o <a href="../../../produtos/apps/sportive-calendar/">Sportive Calendar</a>.</p>
+</li>
+<li>
+<p>Essa data também poderá ser calculada. Por exemplo, para <a href="#meta-e">E</a>, <a href="#meta-f">F</a> e <a href="#meta-g">G</a>, ela será 31/Mar/2020.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><a id="meta-estado"></a> Um <strong>estado</strong>, indicando se a meta está "em andamento conforme definido", "em andamento, mas com mudança(s)", "postergada", "alcançada", "cancelada".</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="uma-meta-neste-app-pode-ter"><a class="anchor" href="#uma-meta-neste-app-pode-ter"></a><a class="link" href="#uma-meta-neste-app-pode-ter">Pode ter</a></h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Uma <strong>prova</strong> ou um <strong>programa de treinos</strong> associado. Exemplos:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Em <a href="#meta-a">A</a>): <a href="https://maratonadorio.com.br/maratona-42k/" target="_blank" rel="noopener">Maratona do Rio</a>.
+Em <a href="#meta-c">C</a>): <a href="http://www.xtreme21.com/turbo_02/" target="_blank" rel="noopener">Xtreme Turbo</a>.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Uma <strong>recorrência de notificação</strong> associada. Exemplos:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Em <a href="#meta-a">A</a>:</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="uma-meta-neste-app-pode-ser"><a class="anchor" href="#uma-meta-neste-app-pode-ser"></a><a class="link" href="#uma-meta-neste-app-pode-ser">Pode ser</a></h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Alterada nos seguintes campos: <a href="#meta-descricao">descrição</a>, <a href="#meta-acao">ação</a>, <a href="#meta-medicao">medição</a>, <a href="#meta-data-finalizacao">data de finalização</a>.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Se alterada, em qualquer campo exceto a data de finalização, o app altera o <a href="#meta-estado">estado</a> da meta passa a ser "em andamento, mas com mudanças".</p>
+</li>
+<li>
+<p>Se a <a href="#meta-data-finalizacao">data de finalização</a> for alterada, o estado da meta passa a ser finalização, o app altera o <a href="#meta-estado">estado</a> da meta para "postergado".</p>
+</li>
+<li>
+<p>Alterações no estado da meta geram notificações que podem ser acompanhadas por quem tem acesso ao <em>smart contract</em>.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="monetizacao"><a class="anchor" href="#monetizacao"></a><a class="link" href="#monetizacao">Monetização</a></h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Ao se registar no aplicativo o atleta ganha uma pequena quantidade de <a href="../../../produtos/finishertoken/">Finisher Tokens</a>.</p>
+</li>
+<li>
+<p>O atleta precisa gastar seus <a href="../../../produtos/finishertoken/">Finisher Tokens</a> para:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Incluir ou alterar metas privadas.</p>
+</li>
+<li>
+<p>Bloquear o recebimento de todos os anúncios ou de categorias específicas dos mesmos.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>O atleta não gasta seus <a href="../../../produtos/finishertoken/">Finisher Tokens</a> quando:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Cadastra ou gerencia suas metas públicas.</p>
+</li>
+<li>
+<p>Recebe notificações.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="concorrentes"><a class="anchor" href="#concorrentes"></a><a class="link" href="#concorrentes">Concorrentes</a></h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.lifewire.com/best-goal-setting-apps-3485941" class="bare">https://www.lifewire.com/best-goal-setting-apps-3485941</a></p>
+</li>
+<li>
+<p><a href="https://www.bustle.com/p/11-goal-setting-apps-that-will-help-keep-you-on-track-12961869" class="bare">https://www.bustle.com/p/11-goal-setting-apps-that-will-help-keep-you-on-track-12961869</a></p>
+</li>
+<li>
+<p><a href="https://www.bestproducts.com/tech/apps/g18727990/goal-and-habit-tracking-apps/" class="bare">https://www.bestproducts.com/tech/apps/g18727990/goal-and-habit-tracking-apps/</a></p>
+</li>
+<li>
+<p><a href="https://focuslife.com.br/5-apps-para-metas-objetivos/" class="bare">https://focuslife.com.br/5-apps-para-metas-objetivos/</a></p>
+</li>
+<li>
+<p><a href="https://www.ibccoaching.com.br/portal/metas-e-objetivos/10-aplicativos-para-se-organizar-na-vida-pessoal-e-no-trabalho/" class="bare">https://www.ibccoaching.com.br/portal/metas-e-objetivos/10-aplicativos-para-se-organizar-na-vida-pessoal-e-no-trabalho/</a></p>
+</li>
+<li>
+<p><a href="https://www.tecmundo.com.br/software/148801-6-apps-definir-metas-planejar-2020-forca-total.htm" class="bare">https://www.tecmundo.com.br/software/148801-6-apps-definir-metas-planejar-2020-forca-total.htm</a></p>
+</li>
+<li>
+<p><a href="https://www.techtudo.com.br/listas/2020/01/aplicativo-de-metas-6-apps-para-seguir-resolucao-de-ano-novo-2020.ghtml" class="bare">https://www.techtudo.com.br/listas/2020/01/aplicativo-de-metas-6-apps-para-seguir-resolucao-de-ano-novo-2020.ghtml</a></p>
+</li>
+<li>
+<p><a href="https://blog.mobills.com.br/aplicativos-sucesso-metas-de-ano-novo/" class="bare">https://blog.mobills.com.br/aplicativos-sucesso-metas-de-ano-novo/</a></p>
+</li>
+<li>
+<p><a href="https://exame.abril.com.br/pme/empreendedor-cria-app-que-te-ajuda-a-realizar-metas-de-ano-novo/" class="bare">https://exame.abril.com.br/pme/empreendedor-cria-app-que-te-ajuda-a-realizar-metas-de-ano-novo/</a></p>
+</li>
+<li>
+<p><a href="https://forbes.com.br/colunas/2017/12/os-melhores-aplicativos-para-alcancar-suas-metas-de-ano-novo/" class="bare">https://forbes.com.br/colunas/2017/12/os-melhores-aplicativos-para-alcancar-suas-metas-de-ano-novo/</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="diferenciais"><a class="anchor" href="#diferenciais"></a><a class="link" href="#diferenciais">Diferenciais</a></h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="plano-de-releases"><a class="anchor" href="#plano-de-releases"></a><a class="link" href="#plano-de-releases">Plano de Releases</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="v0.1.0"><a class="anchor" href="#v0.1.0"></a><a class="link" href="#v0.1.0">Versão 0.1.0: Em React, através da URL finisher.tech/athlete-goals/paulojeronimo/</a></h3>
+
+</div>
+<div class="sect2">
+<h3 id="v0.2.0"><a class="anchor" href="#v0.2.0"></a><a class="link" href="#v0.2.0">Versão 0.2.0: Em React, integrada a Blockchain do Ethereum</a></h3>
+
+</div>
+<div class="sect2">
+<h3 id="v0.4.0"><a class="anchor" href="#v0.4.0"></a><a class="link" href="#v0.4.0">Versão 0.4.0: Em React, para atletas desenvolvedores da Finisher.Tech, através da URL finisher.tech/atlhete-goals/username</a></h3>
+
+</div>
+<div class="sect2">
+<h3 id="v0.5.0"><a class="anchor" href="#v0.5.0"></a><a class="link" href="#v0.5.0">Versão 0.5.0: Em React Native (disponível via Expo), para atletas desenvolvedores da Finisher.Tech</a></h3>
+
+</div>
+<div class="sect2">
+<h3 id="v1.0.0"><a class="anchor" href="#v1.0.0"></a><a class="link" href="#v1.0.0">Versão 1.0.0: Em React Native (disponível na Apple e na Play Store), para todos os atletas</a></h3>
+
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2020-01-13 16:01:02 -0300
+</div>
+</div>
+</body>
+</html>
